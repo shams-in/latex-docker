@@ -31,7 +31,7 @@ RUN apt-get install -yqq yarn
 
 # install pm2
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv D1EA2D4C
-RUN echo "deb http://apt.pm2.io/ubuntu stable main" | sudo tee /etc/apt/sources.list.d/pm2.list
+RUN echo "deb http://apt.pm2.io/ubuntu stable main" | tee /etc/apt/sources.list.d/pm2.list
 RUN apt-get update -yqq
 RUN apt-get install -yqq pm2
 
